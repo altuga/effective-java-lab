@@ -19,6 +19,8 @@ TODO:
 public final class PhoneNumber {
     private final short areaCode, prefix, lineNum;
 
+
+
     public PhoneNumber(int areaCode, int prefix, int lineNum) {
         this.areaCode = rangeCheck(areaCode, 999, "area code");
         this.prefix   = rangeCheck(prefix,   999, "prefix");
@@ -43,7 +45,22 @@ public final class PhoneNumber {
                 && pn.areaCode == areaCode;
     }
 
+    @Override
+    public int hashCode() {
+        int result = areaCode;
+        result = 31 * result + (int) prefix;
+        result = 31 * result + (int) lineNum;
+        return result;
+    }
 
+    @Override
+    public String toString() {
+        return "PhoneNumber{" +
+                "areaCode=" + areaCode +
+                ", prefix=" + prefix +
+                ", lineNum=" + lineNum +
+                '}';
+    }
 
     public static void main(String[] args) {
 

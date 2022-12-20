@@ -92,8 +92,6 @@ m
 d
 4src/main/java/org/jugistanbul/question09/Period.java,b\2\b28add1a9bd7b6fb8d281663e3bd5d3b3f882718
 i
-9src/main/java/org/jugistanbul/question04/PhoneNumber.java,d\d\dd8a6e475d3a63535537a5ceb3b9484b021ae304
-i
 9src/main/java/org/jugistanbul/question44/PhoneNumber.java,9\2\9274266cc079b8bc8f85bf97a3048454a34fde72
 o
 ?src/main/java/org/jugistanbul/question14/PhysicalConstants.java,7\f\7fa455dc4d9e3b8f57f09a54bc87bc50a713d348
@@ -115,16 +113,12 @@ K
 src/main/resource/README.md,7\4\74baaba689aca7dbe75b3b3281cbfbb5e2849bff
 }
 Msrc/main/java/org/jugistanbul/question43/unsuportedOperation/RedHeadDuck.java,a\9\a97e9b2f7b42f73b2b17c7252fa712117f0d9268
-b
-2src/main/java/org/jugistanbul/question03/Room.java,3\4\34de15d662137bc1e07a6aea29ca496356500698
 f
 6src/main/java/org/jugistanbul/question24/RunTests.java,1\a\1a13c9ecd7664cd0d89c79c69da5e724d29d70e7
 d
 4src/main/java/org/jugistanbul/question24/Sample.java,2\9\293b3921ace47529f066475180d040a0b2dfead3
 e
 5src/main/java/org/jugistanbul/question28/SetList.java,c\e\cece22c7b3c3223c492ea5f834d8f8ba211955e8
-b
-2src/main/java/org/jugistanbul/question05/Sort.java,2\3\23508fb66cc8f3bd8c56431e96cd01b39896e3a9
 e
 5src/main/java/org/jugistanbul/question37/Sorting.java,a\f\af27cda9bf8fdcd42f46b67efeb013a12a04935a
 c

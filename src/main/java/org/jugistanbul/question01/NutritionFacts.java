@@ -14,39 +14,62 @@ TODO:
  */
 public class NutritionFacts {
 
-    private  int servingSize; // must
-    private  int servings; // must
-    private  int calories; // optional
-    private  int fat;  // optional
-    private  int sodium; // optional
-    private  int carbohydrate; // optional
+    private final int servingSize; // must
+    private final int servings; // must
+    private final int calories; // optional
+    private final int fat;  // optional
+    private final int sodium; // optional
+    private final int carbohydrate; // optional
 
-
-    // Setters
-    public void setServingSize(int val) {
-        servingSize = val;
+    private NutritionFacts(Builder builder) {
+        servingSize = builder.servingSize;
+        servings = builder.servings;
+        calories = builder.calories;
+        fat = builder.fat;
+        sodium = builder.sodium;
+        carbohydrate = builder.carbohydrate;
     }
 
-    public void setServings(int val) {
-        servings = val;
-    }
+    public static class Builder {
+        // Required parameters
+        private final int servingSize;
+        private final int servings;
 
-    public void setCalories(int val) {
-        calories = val;
-    }
+        // Optional parameters - initialized to default values
+        private int calories = 0;
+        private int fat = 0;
+        private int carbohydrate = 0;
+        private int sodium = 0;
 
-    public void setFat(int val) {
-        fat = val;
-    }
+        public Builder(int servingSize, int servings) {
+            this.servingSize = servingSize;
+            this.servings = servings;
+        }
 
-    public void setSodium(int val) {
-        sodium = val;
-    }
+        public Builder calories(int val) {
+            calories = val;
+            return this;
+        }
 
-    public void setCarbohydrate(int val) {
-        carbohydrate = val;
-    }
+        public Builder fat(int val) {
+            fat = val;
+            return this;
+        }
 
+        public Builder carbohydrate(int val) {
+            carbohydrate = val;
+            return this;
+        }
+
+        public Builder sodium(int val) {
+            sodium = val;
+            return this;
+        }
+
+        public NutritionFacts build() {
+            return new NutritionFacts(this);
+        }
+    }
 
     @Override
     public String toString() {
@@ -61,11 +84,15 @@ public class NutritionFacts {
     }
 
     public static void main(String[] args) {
-        NutritionFacts nutritionFacts = new NutritionFacts();
-        nutritionFacts.setCalories(100);
-        nutritionFacts.setCarbohydrate(69);
-        System.out.println(nutritionFacts);
 
+        NutritionFacts cocaCola = new Builder(240, 8)
+                .calories(100).carbohydrate(38).
+                sodium(35).
+                carbohydrate(27).build();
+
+
+
+        System.out.println(cocaCola);
     }
 
 }
