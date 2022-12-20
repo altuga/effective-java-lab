@@ -1,9 +1,11 @@
 package org.jugistanbul.question06;
 
 
+import java.math.BigDecimal;
+
 /**
  * Altug Bilgin Altintas
- *
+ * <p>
  * Effective Java
  */
 
@@ -48,6 +50,15 @@ public final class Complex {
         return new Complex(re + c.re, im + c.im);
     }
 
+
+    public Complex substract(Complex c) {
+        BigDecimal bigDecimal = new BigDecimal("1");
+        bigDecimal = bigDecimal.add(new BigDecimal("0.10"));
+        System.out.println(bigDecimal.toString());
+
+        return new Complex(re - c.re, im - c.im);
+    }
+
     // TODO implement subtract
 
 
@@ -89,5 +100,10 @@ public final class Complex {
     @Override
     public String toString() {
         return "(" + re + " + " + im + "i)";
+    }
+
+    public static void main(String[] args) {
+        Complex com = new Complex(2, 4);
+        com.substract(new Complex(3, 5));
     }
 }

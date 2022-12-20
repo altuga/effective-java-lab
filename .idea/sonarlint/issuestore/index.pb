@@ -28,8 +28,6 @@ e
 f
 6src/main/java/org/jugistanbul/question19/Combiner.java,9\7\975081af1cbf5fd85cb928e4ba2dc84bfec8869b
 e
-5src/main/java/org/jugistanbul/question06/Complex.java,f\4\f4dd858f4d20d151436feead95e6450ebbae3b95
-e
 5src/main/java/org/jugistanbul/question15/Dessert.java,0\3\03c24d2aaada6930be4459b5c78c45f7c576002d
 d
 4src/main/java/org/jugistanbul/question43/DontDo.java,5\b\5bcc6e2e42bbd968de766a161384f89580615e09
@@ -37,8 +35,6 @@ v
 Fsrc/main/java/org/jugistanbul/question43/unsuportedOperation/Duck.java,0\e\0e6dce409d63b2bcb12dd029655ac84ea3a518c1
 q
 Asrc/main/java/org/jugistanbul/question18/EmptyStackException.java,8\b\8b027ff7c2e0a07128c20c23fd1bb33267f5748b
-d
-4src/main/java/org/jugistanbul/question08/Figure.java,3\6\36c8df7babb765cbbada502ccb74cfa5cc02cbe2
 b
 2src/main/java/org/jugistanbul/question26/Freq.java,1\8\18319ac4bc745c04014697a9460720d4704ca241
 c
@@ -129,10 +125,6 @@ g
 7src/main/java/org/jugistanbul/question26/StockInfo.java,d\b\dbd27bccf99f794916e2d0f1bcc7c4a2bff27b89
 h
 8src/main/java/org/jugistanbul/question38/StopThread.java,f\5\f53f37e748e317f9e9b4a26418cde47df7f80dc2
-a
-1src/main/java/org/jugistanbul/question07/Sub.java,9\a\9a7b95dacb3b4d1f159da84fd39f507d6cdf4a76
-c
-3src/main/java/org/jugistanbul/question07/Super.java,b\5\b58e8c2d56b6c661f37a9259da7f22c716dbe9b4
 d
 4src/main/java/org/jugistanbul/question42/Supply.java,9\5\9596d7446eb39d11b5b9cabc6038ace0baa42be1
 e

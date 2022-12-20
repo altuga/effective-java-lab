@@ -17,7 +17,7 @@ TODO:
  4 - Instructor will show the solutions
  5 - Refactor and ask questions 
 */
-class Figure {
+class Figurex {
     enum Shape { RECTANGLE, CIRCLE  };
 
     // Tag field - the shape of this figure
@@ -31,19 +31,19 @@ class Figure {
     double radius;
 
     // Constructor for circle
-    Figure(double radius) {
+    Figurex(double radius) {
         shape = Shape.CIRCLE;
         this.radius = radius;
     }
 
     // Constructor for rectangle
-    Figure(double length, double width) {
+    Figurex(double length, double width) {
         shape = Shape.RECTANGLE;
         this.length = length;
         this.width = width;
     }
 
-    double area() {
+    double calculateArea() {
         switch(shape) {
             case RECTANGLE:
                 return length * width;
@@ -55,8 +55,8 @@ class Figure {
     }
 
     public static void main(String[] args) {
-        Figure figure = new Figure(3,4);
-        System.out.println(figure.area());
+        Figurex figure = new Figurex(3,4);
+        System.out.println(figure.calculateArea());
 
     }
 }
