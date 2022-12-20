@@ -14,41 +14,39 @@ TODO:
  */
 public class NutritionFacts {
 
-    private final int servingSize ; // must
-    private final int servings ; // must
-    private final int calories ; // optional
-    private final int fat ;  // optional
-    private final int sodium ; // optional
-    private final int carbohydrate ; // optional
+    private  int servingSize; // must
+    private  int servings; // must
+    private  int calories; // optional
+    private  int fat;  // optional
+    private  int sodium; // optional
+    private  int carbohydrate; // optional
 
 
-    public NutritionFacts(int servingSize, int servings) {
-        this(servingSize, servings, 0);
+    // Setters
+    public void setServingSize(int val) {
+        servingSize = val;
     }
 
-    public NutritionFacts(int servingSize, int servings, int calories) {
-        this(servingSize, servings, calories, 0);
+    public void setServings(int val) {
+        servings = val;
     }
 
-    public NutritionFacts(int servingSize, int servings, int calories, int fat) {
-        this(servingSize, servings, calories, fat, 0);
+    public void setCalories(int val) {
+        calories = val;
     }
 
-    public NutritionFacts(int servingSize, int servings, int calories, int fat,
-                          int sodium) {
-        this(servingSize, servings, calories, fat, sodium, 0);
+    public void setFat(int val) {
+        fat = val;
     }
 
-
-    public NutritionFacts(int servingSize, int servings, int calories, int fat,
-                          int sodium, int carbohydrate) {
-        this.servingSize = servingSize;
-        this.servings = servings;
-        this.calories = calories;
-        this.fat = fat;
-        this.sodium = sodium;
-        this.carbohydrate = carbohydrate;
+    public void setSodium(int val) {
+        sodium = val;
     }
+
+    public void setCarbohydrate(int val) {
+        carbohydrate = val;
+    }
+
 
     @Override
     public String toString() {
@@ -63,7 +61,9 @@ public class NutritionFacts {
     }
 
     public static void main(String[] args) {
-        NutritionFacts nutritionFacts = new NutritionFacts(1,3,6,9);
+        NutritionFacts nutritionFacts = new NutritionFacts();
+        nutritionFacts.setCalories(100);
+        nutritionFacts.setCarbohydrate(69);
         System.out.println(nutritionFacts);
 
     }
