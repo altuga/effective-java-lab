@@ -22,9 +22,6 @@ public class Roman {
                 + "(X[CL]|L?X{0,3})(I[XV]|V?I{0,3})$");
     }
 
-
-
-
     public static void main(String[] args) {
         System.out.println(isRomanNumeral("MCMLXXVI"));
     }
