@@ -7,6 +7,8 @@ TODO
  2 - What are the alternative approaches for String concatenation operation?
 */
 
+import java.util.StringJoiner;
+
 public class Combine {
 
 
@@ -16,6 +18,7 @@ public class Combine {
 
         StringBuffer stringBuffer = new StringBuffer();
         StringBuilder stringBuilder = new StringBuilder();
+        
         for (int i = 0; i < count; i++) {
             //str = str + "core"; // String concatenation
             // stringBuffer.append("core");
