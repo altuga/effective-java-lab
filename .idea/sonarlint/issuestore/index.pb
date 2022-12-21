@@ -23,8 +23,6 @@ w
 Gsrc/main/java/org/jugistanbul/question43/IllegalStateExceptionDemo.java,f\3\f33a66af44ca4e7a711739945caaddff82b834c5
 ~
 Nsrc/main/java/org/jugistanbul/question43/IndexOutOfBoundsExceptionExample.java,f\7\f7197513c14f13d9d5431397838015e04d72642c
-l
-<src/main/java/org/jugistanbul/question32/LordOfTheLoops.java,9\3\93f94b6f3288e957ddbc952d4e3535947d0b1118
 g
 7src/main/java/org/jugistanbul/question39/MailNinja.java,e\9\e9a3a3398215ef73d2cf272cfee35894aadcf6a0
 b
@@ -45,8 +43,6 @@ i
 9src/main/java/org/jugistanbul/question44/PhoneNumber.java,9\2\9274266cc079b8bc8f85bf97a3048454a34fde72
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-h
-8src/main/java/org/jugistanbul/question33/RandomTest.java,d\a\da04356db14349259a23b2d596ae18bf476f5c49
 n
 >src/main/java/org/jugistanbul/question11/ReadAndWriteFile.java,1\5\150ca57b99ef983af402bd0e51f1a64add65d43c
 K
@@ -112,7 +108,5 @@ b
 2src/main/java/org/jugistanbul/question03/Room.java,3\4\34de15d662137bc1e07a6aea29ca496356500698
 e
 5src/main/java/org/jugistanbul/question06/Complex.java,f\4\f4dd858f4d20d151436feead95e6450ebbae3b95
-a
-1src/main/java/org/jugistanbul/question31/Max.java,0\1\01574ffec09558b83631c5e4575fdc2aa012082d
 e
 5src/main/java/org/jugistanbul/question37/Sorting.java,a\f\af27cda9bf8fdcd42f46b67efeb013a12a04935a

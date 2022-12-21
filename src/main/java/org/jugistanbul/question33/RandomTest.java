@@ -1,6 +1,8 @@
 package org.jugistanbul.question33;
 
+import java.security.SecureRandom;
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 /*
 TODO
@@ -13,7 +15,8 @@ public class RandomTest {
         int sum = 0;
         Random rand = new Random(100);
         for(int x = 1; x < 100; x++){
-            int num = (rand.nextInt(x)) ;
+            int num = ThreadLocalRandom.current().nextInt(1000); ;
+            //SecureRandom
             sum += num;
             System.out.println("Random number:" + num);
         }

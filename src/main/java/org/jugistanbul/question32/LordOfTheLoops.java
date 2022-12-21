@@ -17,7 +17,7 @@ public class LordOfTheLoops {
         }
 
         Iterator<Integer> i2 = a.iterator();
-        while (i.hasNext()) {
+        while (i2.hasNext()) {
             System.out.println(" --> " + i2.next());
         }
     }
