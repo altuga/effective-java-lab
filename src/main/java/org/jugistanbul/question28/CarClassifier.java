@@ -14,16 +14,27 @@ import java.util.List;
 public class CarClassifier {
 
     public  String classify(Car car) {
+
+        System.out.println(car.sayModel());
+        /*if (car instanceof BMW) {
+            System.out.println("BMW");
+            BMW bmw = (BMW) car;
+            bmw.sayModel();
+            this.classify(bmw);
+        }*/
+        System.out.println("Car");
         return "Car";
     }
 
 
     public  String classify(BMW bmw) {
+        System.out.println("BMW");
         return "BMW";
     }
 
 
     public  String classify(Mercedes mercedes) {
+        System.out.println("Mercedes");
         return "Mercedes";
     }
 

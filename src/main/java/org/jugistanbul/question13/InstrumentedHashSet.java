@@ -3,6 +3,7 @@ package org.jugistanbul.question13;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /*
 TODO
@@ -12,8 +13,10 @@ TODO
  4 - Refactor and ask questions
 */
 
-public class InstrumentedHashSet<E> extends HashSet<E> {
+public class InstrumentedHashSet<E>  extends HashSet<E>{
     // The number of attempted element insertions
+
+
     private int addCount = 0;
 
     public InstrumentedHashSet() {
@@ -24,7 +27,8 @@ public class InstrumentedHashSet<E> extends HashSet<E> {
     }
 
     @Override public boolean add(E e) {
-        addCount++;
+        //addCount++;
+
         return super.add(e);
     }
 

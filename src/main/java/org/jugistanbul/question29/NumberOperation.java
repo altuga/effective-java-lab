@@ -20,10 +20,9 @@ public class NumberOperation {
     }
 
 
-    static int min(Integer[] args) {
-        if (args.length == 0)
-            throw new IllegalArgumentException("Too few arguments");
-        int min = args[0];
+    static int min(int first, Integer[] args) {
+
+        int min = first;
         for (int i = 1; i < args.length; i++)
             if (args[i] < min)
                 min = args[i];
@@ -33,6 +32,6 @@ public class NumberOperation {
 
     public static void main(String[] args) {
         System.out.println(sum(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)));
-        System.out.println(min(new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}));
+        System.out.println(min(4, new Integer[]{}));
     }
 }

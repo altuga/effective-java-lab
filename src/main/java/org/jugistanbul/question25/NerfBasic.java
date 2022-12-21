@@ -1,5 +1,6 @@
 package org.jugistanbul.question25;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -8,10 +9,11 @@ import java.util.Objects;
 TODO
 
 1 - Run NerfBasic.java
-2 - Any abnormality  ?
+2 - Any abnormality?
 */
 
-public class NerfBasic {
+public class NerfBasic  {
+
 
 
     protected double range;
@@ -23,7 +25,13 @@ public class NerfBasic {
     }
 
 
-    public boolean equals(NerfBasic nerfBasic) {
+    @Override
+    public boolean equals(Object obj) {
+        //String s = (String) obj ;
+        NerfBasic nerfBasic = null;
+        if (obj instanceof NerfBasic) { // RTTI - Run time type identification
+             nerfBasic = (NerfBasic) obj;
+        }
         if (this == nerfBasic) return true;
 
         return Double.compare(nerfBasic.range, range) == 0 &&
@@ -31,7 +39,7 @@ public class NerfBasic {
     }
 
 
-
+    @Override
     public int hashCode() {
         return Objects.hashCode(range * dartInRows);
     }

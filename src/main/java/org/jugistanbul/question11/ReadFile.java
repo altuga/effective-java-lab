@@ -5,10 +5,10 @@ import java.io.*;
 
 /**
  * Altug Bilgin Altintas
- * 
+ * <p>
  * Effective Java Workshop
- *
- *
+ * <p>
+ * <p>
  * Twitter : @altugaltintas
  */
 
@@ -22,11 +22,9 @@ TODO:
 public class ReadFile {
 
     static String firstLineOfFile(String path) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader(path));
-        try {
+
+        try (BufferedReader br = new BufferedReader(new FileReader(path));) {
             return br.readLine();
-        } finally {
-            br.close();
         }
     }
 

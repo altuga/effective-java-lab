@@ -24,7 +24,7 @@ public class Symptom {
 
     static Collection<Card.Suit> suits = Arrays.asList(Card.Suit.values());
     static Collection<Card.Rank> ranks = Arrays.asList(Card.Rank.values());
-    static List<Card> deck = new ArrayList<>();
+
 
     public static void main(String[] args) {
 

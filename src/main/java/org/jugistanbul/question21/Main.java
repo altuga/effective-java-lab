@@ -14,12 +14,12 @@ public class Main {
         /**
          * If your Weight is 80 KG on Earth then what will be on Mars? Or Uranus ? ...
          */
-        double earthWeight = Double.parseDouble(args[0]);
+        double earthWeight = Double.parseDouble("80");
 
         double result = Calculator.
-                calculateSurfaceWeight(Calculator.JUPITER_REDIUS,
-                        Calculator.JUPITER_MASS, earthWeight);
-        System.out.println("Weight on EARTH = " + result);
+                calculateSurfaceWeight(Calculator.MARS_MASS,
+                        Calculator.MARS_REDIUS, earthWeight);
+        System.out.println("Weight on JUPITER = " + result);
 
         /**
          * for (Planets p  ...) {

@@ -22,6 +22,7 @@ public class StockCalculation {
     private List<StockInfo> getStockInfo(Stream<String> symbols) {
         return symbols
                 .map(this::getStock) //slow network operation
+                .parallel()
                 .collect(toList());
     }
 
@@ -29,7 +30,7 @@ public class StockCalculation {
 
         //Network Operation Simulation
         try {
-            Thread.sleep(10);
+            Thread.sleep(10); //IO
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

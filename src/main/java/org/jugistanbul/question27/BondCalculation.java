@@ -2,6 +2,7 @@ package org.jugistanbul.question27;
 
 
 import java.math.BigDecimal;
+import java.util.Objects;
 
 
 /*
@@ -22,14 +23,19 @@ public class BondCalculation {
      */
     public BigDecimal calculateTimeValueOfMoney(BigDecimal m) {
 
+        //assert m==null ;
         /*
         Should we check if m is null or not ? If Yes how ?
          */
+
+        Objects.requireNonNull(m, "the value of m is null");
+
 
         if (m.signum() <= 0)
             throw new ArithmeticException("Money Input <= 0: " + m);
 
         // calculation
+        assert m.doubleValue() > 0  ;
         return new BigDecimal(1);
 
     }

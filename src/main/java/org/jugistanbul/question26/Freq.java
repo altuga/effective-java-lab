@@ -20,6 +20,7 @@ public class Freq {
     public static void main(String[] args) {
 
         primes().map(p -> TWO.pow(p.intValueExact()).subtract(ONE))
+                .parallel()
                 .filter(mersenne -> mersenne.isProbablePrime(50))
                 .limit(20)
                 .forEach(System.out::println);
