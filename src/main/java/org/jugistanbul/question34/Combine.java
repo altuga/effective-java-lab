@@ -18,7 +18,7 @@ public class Combine {
 
         StringBuffer stringBuffer = new StringBuffer();
         StringBuilder stringBuilder = new StringBuilder();
-        
+
         for (int i = 0; i < count; i++) {
             //str = str + "core"; // String concatenation
             // stringBuffer.append("core");

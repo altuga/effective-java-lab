@@ -51,12 +51,8 @@ c
 3src/main/java/org/jugistanbul/question18/Stack.java,8\b\8b87101906dc3dff3666f20087a33f11c97adf36
 g
 7src/main/java/org/jugistanbul/question26/StockInfo.java,d\b\dbd27bccf99f794916e2d0f1bcc7c4a2bff27b89
-h
-8src/main/java/org/jugistanbul/question38/StopThread.java,f\5\f53f37e748e317f9e9b4a26418cde47df7f80dc2
 d
 4src/main/java/org/jugistanbul/question42/Supply.java,9\5\9596d7446eb39d11b5b9cabc6038ace0baa42be1
-g
-7src/main/java/org/jugistanbul/question35/Translate.java,d\f\dff35a0d04d787c6fe18191595cec046dca35d52
 b
 2src/main/java/org/jugistanbul/question43/User.java,b\4\b43d76a65b68d6a492fded5e29025b38b4fc0e5e
 e
@@ -106,5 +102,3 @@ b
 2src/main/java/org/jugistanbul/question03/Room.java,3\4\34de15d662137bc1e07a6aea29ca496356500698
 e
 5src/main/java/org/jugistanbul/question06/Complex.java,f\4\f4dd858f4d20d151436feead95e6450ebbae3b95
-e
-5src/main/java/org/jugistanbul/question37/Sorting.java,a\f\af27cda9bf8fdcd42f46b67efeb013a12a04935a
