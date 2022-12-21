@@ -32,6 +32,15 @@ public final class PhoneNumber {
         return result;
     }
 
+    @Override
+    public String toString() {
+        return "PhoneNumber{" +
+                "areaCode=" + areaCode +
+                ", prefix=" + prefix +
+                ", lineNum=" + lineNum +
+                '}';
+    }
+
     /**
      * Returns the string representation of this phone number.
      * The string consists of twelve characters whose format is

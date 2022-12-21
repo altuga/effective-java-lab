@@ -1,13 +1,20 @@
 package org.jugistanbul.question38;
 
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 /** TODO
 * How long would you expect this program to run?
 */
 public class StopThread {
-    private static AtomicBoolean stopRequested = new AtomicBoolean();
+    private static  boolean stopRequested;
+
+    public static synchronized  boolean isStopRequested() {
+        return stopRequested;
+    }
+
+    public static synchronized void setStopRequested(boolean stopRequested) {
+        StopThread.stopRequested = stopRequested;
+    }
 
     public static void main(String[] args)
             throws InterruptedException {
@@ -16,7 +23,7 @@ public class StopThread {
 
             int i = 0;
             System.out.println(Thread.currentThread().getName() + " " + i);
-            while (!stopRequested.get())
+            while (!isStopRequested())
                 i++;
             System.out.println("Finito");
         });
@@ -24,7 +31,8 @@ public class StopThread {
 
         System.out.println(Thread.currentThread().getName());
         TimeUnit.SECONDS.sleep(1);
-        stopRequested.set(true);
+        setStopRequested(true);
+        //stopRequested = true;
 
     }
 }
