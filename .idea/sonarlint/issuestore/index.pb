@@ -8,8 +8,6 @@ h
 b
 2src/main/java/org/jugistanbul/question12/Card.java,9\4\941694ce78c89b00187b64c7d43f4e27f313b6f0
 e
-5src/main/java/org/jugistanbul/question34/Combine.java,4\6\46dad4d1a80459d71c49c70ccaefbbda050465d7
-e
 5src/main/java/org/jugistanbul/question15/Dessert.java,0\3\03c24d2aaada6930be4459b5c78c45f7c576002d
 d
 4src/main/java/org/jugistanbul/question43/DontDo.java,5\b\5bcc6e2e42bbd968de766a161384f89580615e09
