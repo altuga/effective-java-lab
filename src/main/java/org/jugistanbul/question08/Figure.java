@@ -43,7 +43,7 @@ class Figure {
         this.width = width;
     }
 
-    double area() {
+    double calculateArea() {
         switch(shape) {
             case RECTANGLE:
                 return length * width;
@@ -56,7 +56,7 @@ class Figure {
 
     public static void main(String[] args) {
         Figure figure = new Figure(3,4);
-        System.out.println(figure.area());
+        System.out.println(figure.calculateArea());
 
     }
 }

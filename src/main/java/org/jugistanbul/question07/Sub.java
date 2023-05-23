@@ -18,7 +18,7 @@ TODO:
 */
 import java.time.Instant;
 
-public final class Sub extends Super {
+public final class Sub extends Super  {
 
     // Blank final, set by constructor
     private final Instant instant;
@@ -34,6 +34,8 @@ public final class Sub extends Super {
     }
 
     public static void main(String[] args) {
+
+
         Sub sub = new Sub();
         sub.overrideMe();
     }

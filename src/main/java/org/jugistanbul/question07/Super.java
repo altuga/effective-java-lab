@@ -10,7 +10,7 @@ package org.jugistanbul.question07;
 public abstract class Super {
 
     public Super() {
-        overrideMe();
+        //overrideMe();
     }
     public abstract void overrideMe() ;
 }

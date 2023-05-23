@@ -1,6 +1,8 @@
 package org.jugistanbul.question06;
 
 
+import java.math.BigDecimal;
+
 /**
  * Altug Bilgin Altintas
  *
@@ -48,6 +50,10 @@ public final class Complex {
         return new Complex(re + c.re, im + c.im);
     }
 
+    public Complex substract(Complex c) {
+        return new Complex(re - c.re, im - c.im);
+    }
+
     // TODO implement subtract
 
 
@@ -89,5 +95,18 @@ public final class Complex {
     @Override
     public String toString() {
         return "(" + re + " + " + im + "i)";
+    }
+
+    public static void main(String[] args) {
+        System.out.println("hello");
+        BigDecimal bigDecimal = new BigDecimal("1");
+        BigDecimal ybKurus = new BigDecimal("0.25");
+        BigDecimal result = bigDecimal.subtract(ybKurus);
+        System.out.println("Sonuc " + result);
+
+        Complex complex = new Complex(3,5);
+        Complex resultComplex = complex.add(new Complex(3,6));
+        System.out.println("Complex " + resultComplex);
+
     }
 }
