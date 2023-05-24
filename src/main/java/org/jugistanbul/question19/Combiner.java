@@ -18,6 +18,7 @@ public class Combiner {
         return result;
     }
 
+
     // Simple program to exercise generic method
     public static void main(String[] args) {
         Set<String> guys = Set.of("Tom", "Dick", "Harry");

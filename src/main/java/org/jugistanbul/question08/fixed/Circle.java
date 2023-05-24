@@ -1,6 +1,6 @@
 package org.jugistanbul.question08.fixed;
 
-public class Circle extends Figure{
+public class Circle implements Figure{
 
     private double radius;
 

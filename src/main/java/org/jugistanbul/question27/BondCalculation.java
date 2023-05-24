@@ -26,6 +26,7 @@ public class BondCalculation {
         Should we check if m is null or not ? If Yes how ?
          */
 
+
         if (m.signum() <= 0)
             throw new ArithmeticException("Money Input <= 0: " + m);
 

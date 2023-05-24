@@ -1,7 +1,11 @@
 package org.jugistanbul.question08.fixed;
 
-public abstract class Figure {
+public interface  Figure {
 
-    public abstract double calculateArea();
+     double calculateArea();
+
+    default public double calculateRange() {
+        return 5* 9 ;
+    }
 
 }

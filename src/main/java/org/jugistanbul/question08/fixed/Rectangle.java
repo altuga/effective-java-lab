@@ -1,6 +1,6 @@
 package org.jugistanbul.question08.fixed;
 
-public class Rectangle extends Figure{
+public class Rectangle implements Figure{
 
     private double length;
     private double width;
