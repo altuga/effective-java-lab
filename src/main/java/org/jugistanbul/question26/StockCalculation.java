@@ -3,6 +3,7 @@ package org.jugistanbul.question26;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
@@ -22,6 +23,7 @@ public class StockCalculation {
     private List<StockInfo> getStockInfo(Stream<String> symbols) {
         return symbols
                 .map(this::getStock) //slow network operation
+                .parallel()
                 .collect(toList());
     }
 
@@ -41,13 +43,16 @@ public class StockCalculation {
 
     public static void main(String[] args) {
         StockCalculation stockCalculation = new StockCalculation();
-
+        long start = System.nanoTime();
         List<String> stockNames = new ArrayList() ;
         for (int i = 0; i <1000 ; i++) {
             stockNames.add("A" + i) ;
         }
         List<StockInfo>  stockInfos =  stockCalculation.getStockInfo(stockNames.stream());
         System.out.println(stockInfos);
+        long end = System.nanoTime();
+        System.out.println(TimeUnit.MILLISECONDS.convert((end-start), TimeUnit.NANOSECONDS));
+
 
     }
 

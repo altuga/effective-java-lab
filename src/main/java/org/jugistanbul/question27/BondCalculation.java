@@ -2,6 +2,7 @@ package org.jugistanbul.question27;
 
 
 import java.math.BigDecimal;
+import java.util.Objects;
 
 
 /*
@@ -25,6 +26,13 @@ public class BondCalculation {
         /*
         Should we check if m is null or not ? If Yes how ?
          */
+        //if(m==null) {
+        //    // .....
+       // }
+
+        assert  m!=null;
+
+        //Objects.requireNonNull(m);
 
 
         if (m.signum() <= 0)

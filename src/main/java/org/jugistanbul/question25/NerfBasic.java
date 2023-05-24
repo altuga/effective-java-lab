@@ -22,8 +22,9 @@ public class NerfBasic {
         this.dartInRows = dartInRows;
     }
 
-
-    public boolean equals(NerfBasic nerfBasic) {
+    @Override
+    public boolean equals(Object obj) {
+        NerfBasic nerfBasic = (NerfBasic) obj;
         if (this == nerfBasic) return true;
 
         return Double.compare(nerfBasic.range, range) == 0 &&
@@ -47,8 +48,9 @@ public class NerfBasic {
     public static void main(String[] args) {
         Map<NerfBasic, String> m = new HashMap<>();
 
+        NerfBasic nerfElite = new NerfBasic(4d, 6);
         NerfBasic nerfBasic = new NerfBasic(4d, 6);
-        NerfBasic nerfElite = new NerfBasic(6d, 3);
+
         NerfBasic nerfUltra = new NerfBasic(8d, 5);
 
         m.put(nerfBasic, "Nerf Basic");
