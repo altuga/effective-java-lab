@@ -14,15 +14,15 @@ TODO
  4 - What is the lesson  ?
 */
 
-public class Guess {
-    private final Object[] choiceArray;
+public class Guess<T> {
+    private final List<T> choiceArray;
 
-    public Guess(Collection choices) {
-        choiceArray = choices.toArray();
+    public Guess(Collection<T> choices) {
+        choiceArray = choices.stream().toList();
     }
-    public Object choose() {
+    public T choose() {
         Random rnd = ThreadLocalRandom.current();
-        return choiceArray[rnd.nextInt(choiceArray.length)];
+        return choiceArray.get(rnd.nextInt(choiceArray.size()));
 
     }
 
@@ -31,17 +31,17 @@ public class Guess {
 
         List<String> stringList = List.of("one", "two", "three", "four", "five", "six");
 
-        Guess guess = new Guess(intList);
+        Guess<Integer> guess = new Guess(intList);
 
         for (int i = 0; i < 10; i++) {
-            String choice = (String) guess.choose();
+            int choice =  guess.choose();
             System.out.println(choice);
         }
 
-        guess = new Guess(stringList);
+        Guess<String> guessString = new Guess(stringList);
 
         for (int i = 0; i < 10; i++) {
-            String choice = (String) guess.choose();
+            String choice =  guessString.choose();
             System.out.println(choice);
         }
 

@@ -14,6 +14,10 @@ public final class Period {
     private final Date start;
     private final Date end;
 
+    public Date getEnd() {
+        return end;
+    }
+
     /**
      * @param start the beginning of the period
      * @param end   the end of the period; must not precede start
@@ -25,8 +29,10 @@ public final class Period {
         if (start.compareTo(end) > 0)
             throw new IllegalArgumentException(
                     start + " after " + end);
-        this.start = start;
-        this.end = end;
+
+        System.out.println(end);
+        this.start = new Date(start.getTime());
+        this.end = new Date(end.getTime());
 
     }
 

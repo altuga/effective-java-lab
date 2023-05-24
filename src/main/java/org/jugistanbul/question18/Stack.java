@@ -48,7 +48,7 @@ public class Stack {
 
     public static void main(String[] args) {
         Stack stack = new Stack();
-        stack.push("hello"); // write 12 and run again
+        stack.push(12); // write 12 and run again
 
         String result = (String) stack.pop();
         System.out.println(result.toUpperCase());

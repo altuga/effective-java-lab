@@ -11,12 +11,13 @@ TODO
 */
 public class Hazardous {
 
-
-    static void hazardous( List<String>... stringLists) {
+ @SafeVarargs
+  static <T> void hazardous( List<? extends T> ... stringLists) {
         List<Integer> intList = List.of(42);
         Object[] objects = stringLists;
+
         objects[0] = intList; // Heap pollution
-        String s = stringLists[0].get(0); // ClassCastException
+        //String s = stringLists[0].get(0); // ClassCastException
     }
 
     public static void main(String[] args) {

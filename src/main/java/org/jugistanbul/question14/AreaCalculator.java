@@ -17,7 +17,8 @@ public class AreaCalculator {
 
 
     public static void main(String[] args) {
-
+        int r = Integer.parseInt(args[0]);
+        System.out.println(  PhysicalConstants.PI.getValue() * (r * r));
 
     }
 }
