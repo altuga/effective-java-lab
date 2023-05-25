@@ -22,7 +22,7 @@ public class ReadFile {
     private static final int BUFFER_SIZE = 8 * 1024;
 
 
-    static void copy(String src, String dst) throws IOException {
+    static void copy(String src, String dst) {
         try (InputStream in = new FileInputStream(src);
              OutputStream out = new FileOutputStream(dst)) {
 
@@ -34,7 +34,7 @@ public class ReadFile {
 
         } catch (IOException ex) {
             System.err.println(ex);
-            throw ex;
+            //throw ex;
         }
 
 

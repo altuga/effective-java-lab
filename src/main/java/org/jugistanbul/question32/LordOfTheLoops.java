@@ -10,14 +10,19 @@ TODO
 */
 public class LordOfTheLoops {
 
-    public static void exec(List<String> n, List<Integer> a) {
-        Iterator<String> i = n.iterator();
+    public static void exec(List<String> names, List<Integer> ages) {
+        Iterator<String> i = names.iterator();
         while (i.hasNext()) {
             System.out.println(" --> " + i.next() );
         }
 
-        Iterator<Integer> i2 = a.iterator();
-        while (i.hasNext()) {
+        for (String name: names) {
+            System.out.println(" --> " + name );
+        }
+       // name
+
+        Iterator<Integer> i2 = ages.iterator();
+        while (i2.hasNext()) {
             System.out.println(" --> " + i2.next());
         }
     }

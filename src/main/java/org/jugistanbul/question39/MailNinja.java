@@ -1,6 +1,9 @@
 package org.jugistanbul.question39;
 
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 /*
 TODO:
  - Run the app
@@ -9,11 +12,28 @@ TODO:
 */
 public class MailNinja {
 
+    static ExecutorService exec = Executors.newFixedThreadPool(10);
+
     public static void main(String[] args) {
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10000; i++) {
             // call sendMail method in an async way with Thread
-            sendMail(i);
+            int finalI = i;
+            Runnable task = () -> sendMail(finalI);
+            exec.submit(task);
+        }
+        exec.shutdown();
+
+    }
+
+    public static void mainx(String[] args) {
+
+
+        for (int i = 0; i < 1000; i++) {
+            // call sendMail method in an async way with Thread
+            int finalI = i;
+            Thread t = new Thread(() -> sendMail(finalI));
+            t.start();
         }
 
     }

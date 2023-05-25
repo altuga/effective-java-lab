@@ -3,6 +3,7 @@ package org.jugistanbul.question37;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.NoSuchElementException;
 
 /**
  *  1 - How do you transform current Exception in to IndexOutOfBoundsException -
@@ -15,14 +16,20 @@ public class Sorting<E> {
 
     private static List myList = new ArrayList();
 
-    public E get(int index) {
-        ListIterator<E> i = myList.listIterator();
-        return i.next();
+    public void get(int index) throws Throwable{
+        try {
+            ListIterator<E> i = myList.listIterator();
+             i.next();
+        } catch(NoSuchElementException nseEx) {
+            System.out.println(" " + nseEx);
+            throw new IllegalArgumentException("hata var").initCause(nseEx);
+        }
+
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Throwable{
         Sorting<String> sorting = new Sorting<String>();
-        System.out.println(sorting.get(9));
+        sorting.get(9);
     }
 
 

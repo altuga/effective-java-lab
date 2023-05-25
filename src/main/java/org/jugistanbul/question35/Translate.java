@@ -10,16 +10,20 @@ public class Translate {
 
     public static String processStrings(String[] strings) {
 
-        int i = 0;
+        //int i = 0;
         String result = "";
-        try {
-            while (true) {
-                result = result.concat(processSingleString(strings[i]));
-                i++;
-            }
-        } catch (ArrayIndexOutOfBoundsException e) {
-            // Ignore, we're done
+        // try {
+
+        for (int i = 0; i < strings.length; i++) {
+            result = result.concat(processSingleString(strings[i]));
         }
+        // while (true) {
+        //     result = result.concat(processSingleString(strings[i]));
+        //     i++;
+        // }
+        // } catch (ArrayIndexOutOfBoundsException e) {
+        // Ignore, we're done
+        // }
         return result;
     }
 

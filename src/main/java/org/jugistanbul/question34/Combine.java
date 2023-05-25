@@ -14,9 +14,13 @@ public class Combine {
         int count = 1000;
         String str = "";
 
+        StringBuilder stringBuilder = new StringBuilder();
+        StringBuffer stringBuffer = new StringBuffer();
         for (int i = 0; i < count; i++) {
-            str = str + "core"; // String concatenation
+            // str = str + "core"; // String concatenation
+            stringBuilder.append(str);
         }
+        System.out.println(stringBuilder);
 
 
     }
