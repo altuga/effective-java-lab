@@ -1,6 +1,7 @@
 package org.jugistanbul.question30;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class CheeseController {
@@ -12,7 +13,7 @@ public class CheeseController {
      * or null if no cheeses are available for purchase.
      */
     public List<Cheese> getCheeses() {
-        return cheesesInStock.isEmpty() ? null
+        return cheesesInStock.isEmpty() ? Collections.EMPTY_LIST
                 : cheesesInStock;
     }
 }
