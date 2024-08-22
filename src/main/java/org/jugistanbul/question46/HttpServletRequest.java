@@ -1,12 +1,19 @@
 package org.jugistanbul.question46;
 
-import org.jugistanbul.question14.PhysicalConstants;
-
 public class HttpServletRequest {
     public String getParameter(String username) {
+        return "random";
     }
 
-    public Object[] getCookies() {
-            return new Object[0];
+    public String[] getCookies() {
+            return "mycookies".split(",");
+    }
+
+    public HttpSession getSession() {
+        return new HttpSession();
+    }
+
+    public HttpSession getSession(boolean b) {
+        return new HttpSession();
     }
 }
