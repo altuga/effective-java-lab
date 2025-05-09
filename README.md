@@ -30,9 +30,8 @@ src/
 
 ## Requirements
 
-- Java 8+
+- Java 21+
 - Maven
 
 ---
 For learning and demonstration purposes.# effective-java-lab
-
