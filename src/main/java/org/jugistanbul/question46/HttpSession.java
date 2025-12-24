@@ -8,5 +8,6 @@ public class HttpSession {
     }
 
     public void setAttribute(String user, String username) {
+
     }
 }
