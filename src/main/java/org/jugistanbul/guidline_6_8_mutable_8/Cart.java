@@ -1,3 +1,4 @@
+package org.jugistanbul.guidline_6_8_mutable_8;
 import java.util.*;
 
 public final class Cart {
