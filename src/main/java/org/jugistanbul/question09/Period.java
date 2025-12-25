@@ -31,8 +31,10 @@ public final class Period {
                     start + " after " + end);
 
         System.out.println(end);
-        this.start = new Date(start.getTime());
-        this.end = new Date(end.getTime());
+        //this.start = new Date(start.getTime());
+        //this.end = new Date(end.getTime());
+        this.start =start;
+        this.end = end;
 
     }
 
